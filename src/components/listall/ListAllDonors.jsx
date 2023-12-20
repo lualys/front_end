@@ -105,7 +105,7 @@ const ListAllDonors = () => {
                     <Alert variant="info">
                       Não há doações disponíveis.
                     </Alert>
-                      <img src="assets/images/vazio.png" alt="Empty List" style={{ maxWidth: '100%', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}  />
+                      <img src="/src/assets/images/vazio.png" alt="Empty List" style={{ maxWidth: '100%', marginTop: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}  />
                     </div>
                   ) : (
                     dadosDaAPI.map((item, index) =>(
