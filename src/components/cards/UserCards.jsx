@@ -19,7 +19,7 @@ const CardUSer = () => {
             try{
                 const token = localStorage.getItem('accessToken')
                 if(token){
-                    const response = await fetch('http://localhost:8000/get-user',{
+                    const response = await fetch('https://backend-ru7l.onrender.com/get-user',{
                         method: 'GET',
                         headers: {
                             'Authorization': `Bearer ${token}`,

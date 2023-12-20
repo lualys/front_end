@@ -64,7 +64,7 @@ function UserForm() {
 
         try{
             setButtonState(true)
-            const response = await fetch("http://localhost:8000/create-user", {
+            const response = await fetch("https://backend-ru7l.onrender.com/create-user", {
                 method: 'POST',
                 headers: {
                   'Content-Type': 'application/json',

@@ -39,7 +39,7 @@ const ListAllDonors = () => {
             try{
                 const token = localStorage.getItem('accessToken')
                 if(token){
-                    const response = await fetch('http://localhost:8000/get-all-donors',{
+                    const response = await fetch('https://backend-ru7l.onrender.com/get-all-donors',{
                         method: 'GET',
                         headers: {
                             'Authorization': `Bearer ${token}`,
@@ -72,7 +72,7 @@ const ListAllDonors = () => {
         try{
             setButtonState(true)
             const token = localStorage.getItem('accessToken')
-            const response = await fetch("http://localhost:8000/oilcollection",{
+            const response = await fetch("https://backend-ru7l.onrender.com/oilcollection",{
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`,

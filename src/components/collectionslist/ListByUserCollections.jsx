@@ -44,7 +44,7 @@ const ListByUserCollections = () => {
                 setGeneralError('')
                 const token = localStorage.getItem('accessToken')
                 if(token){
-                    const response = await fetch('http://localhost:8000/get-colections',{
+                    const response = await fetch('https://backend-ru7l.onrender.com/get-colections',{
                         method: 'GET',
                         headers: {
                             'Authorization': `Bearer ${token}`,
@@ -82,7 +82,7 @@ const ListByUserCollections = () => {
                 setstatusItem(false)
             }
             if(token){
-                const response = await fetch(`http://localhost:8000/get-donor-id/${dadosDaAPI[index].donor}`,{
+                const response = await fetch(`https://backend-ru7l.onrender.com/get-donor-id/${dadosDaAPI[index].donor}`,{
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${token}`,
@@ -114,7 +114,7 @@ const ListByUserCollections = () => {
             setButtonState(true)
             const token = localStorage.getItem('accessToken')
             if(token){
-                const response = await fetch(`http://localhost:8000/delete/oilcollection/${dadosDaAPI[idState]._id}`,{
+                const response = await fetch(`https://backend-ru7l.onrender.com/delete/oilcollection/${dadosDaAPI[idState]._id}`,{
                     method: 'DELETE',
                     headers: {
                         'Authorization': `Bearer ${token}`,

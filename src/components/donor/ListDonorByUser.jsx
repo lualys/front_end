@@ -38,7 +38,7 @@ const ListDonorByUser = () => {
             try{
                 const token = localStorage.getItem("accessToken")
                 if(token){
-                    const response = await fetch('http://localhost:8000/get-donors',{
+                    const response = await fetch('https://backend-ru7l.onrender.com/get-donors',{
                         method: 'GET',
                         headers: {
                             'Authorization': `Bearer ${token}`,
@@ -71,7 +71,7 @@ const ListDonorByUser = () => {
             setButtonState(true)
             const token = localStorage.getItem('accessToken')
             if(token){
-                const response = await fetch(`http://localhost:8000/delete-donor/${dadosDaAPI[idState]._id}`,{
+                const response = await fetch(`https://backend-ru7l.onrender.com/delete-donor/${dadosDaAPI[idState]._id}`,{
                     method: 'DELETE',
                     headers: {
                         'Authorization': `Bearer ${token}`,
