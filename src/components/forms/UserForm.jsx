@@ -105,7 +105,7 @@ function UserForm() {
         <div >
             <Container>
             <Form onSubmit={saveDataUser}>
-                <h1 className="text-muted">Cadastro de usuário usuário</h1>
+                <h1 className="text-muted">Cadastro de Usuário </h1>
                 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Nome</Form.Label>

@@ -46,7 +46,7 @@ const ListByUCollectionsActive = () => {
                 setGeneralError('')
                 const token = localStorage.getItem('accessToken')
                 if(token){
-                    const response = await fetch('http://localhost:8000/get-colections-active',{
+                    const response = await fetch('https://backend-ru7l.onrender.com/get-colections-active',{
                         method: 'GET',
                         headers: {
                             'Authorization': `Bearer ${token}`,
@@ -79,7 +79,7 @@ const ListByUCollectionsActive = () => {
             setButtonState(true)
             const token = localStorage.getItem('accessToken')
             if(token){
-                const response = await fetch(`http://localhost:8000/oilcollection/${dadosDaAPI[idState]._id}/status`, {
+                const response = await fetch(`https://backend-ru7l.onrender.com/oilcollection/${dadosDaAPI[idState]._id}/status`, {
                     method: 'PUT', 
                     headers: {
                         'Authorization': `Bearer ${token}`,

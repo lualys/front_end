@@ -57,7 +57,7 @@ const LoginForm = () => {
     <Container>
     <Form onSubmit={handleSubmit}>
       
-      <h1 className="text-muted">Autenticação de usuário</h1>
+      <h1 className="text-muted">Autenticação de Usuário</h1>
       
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email</Form.Label>
